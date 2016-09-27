@@ -1,0 +1,9 @@
+.nav-stacked.col-md-2 {
+	a.nav-link {
+		text-align: center;
+	};
+	a.nav-link:hover, a.nav-link:focus {
+		color: $text-color-00;
+		background-color: $text-color-01;
+	};
+};

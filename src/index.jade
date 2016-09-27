@@ -1,0 +1,15 @@
+extends _layouts/base
+
+include _modules/link/link
+
+block content
+	.container
+		.container
+			include _modules/index/topMenu
+			include _modules/index/header
+		.container-nopad
+			.container
+				include _modules/index/leftMenu
+				include _modules/index/welcome
+		.container
+			include _modules/index/footer
