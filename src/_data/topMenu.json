@@ -1,0 +1,19 @@
+{
+	"textMuted": "Project Pug",
+	"activeLinks":[
+		{
+			"title": "Home",
+			"link": "#"
+		}
+	],
+	"links":[
+		{
+			"title": "About",
+			"link": "#"
+		},
+		{
+			"title": "Contact",
+			"link": "#"
+		}
+	]
+}

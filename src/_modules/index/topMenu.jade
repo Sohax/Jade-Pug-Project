@@ -1,14 +1,12 @@
 .header.clearfix
   nav
     ul.nav.nav-pills.pull-xs-right
-      li.nav-item
-        a.nav-link.active(href='#')
-          | Home 
-          span.sr-only (current)
-      li.nav-item
-        a.nav-link(href='#') About
-      li.nav-item
-        a.nav-link(href='#') Contact
-  h3.text-muted Project Pug
+      each activeLink in site.data.topMenu.activeLinks
+        li.nav-item
+          a.nav-link.active(href="#{activeLink.link}") #{activeLink.title}
+      each link in site.data.topMenu.links
+        li.nav-item
+          a.nav-link(href="#{link.link}") #{link.title}
+  h3.text-muted #{site.data.topMenu.textMuted}
 p.spacer
 

@@ -1,7 +1,3 @@
 nav.nav.nav-pills.nav-stacked.col-md-2
-	a.nav-link(href='#') Link
-	a.nav-link(href='#') Link
-	a.nav-link(href='#') Link
-	a.nav-link(href='#') Link
-	a.nav-link(href='#') Link
-	a.nav-link(href='#') Link
+	each link in site.data.leftMenu.links
+		a.nav-link(href="#{link.link}") #{link.title}
